@@ -6,3 +6,4 @@
 Links to gameplay previews:
 [Brain Even Game](https://asciinema.org/a/595741)
 [Brain Calc Game](https://asciinema.org/a/595923)
+[Brain GCD Game](https://asciinema.org/a/596036)
