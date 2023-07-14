@@ -9,7 +9,7 @@ const getExpressionResult = (operand1, operand2, operator) => {
     case '*':
       return operand1 * operand2;
     default:
-      return null;
+      return "Operation does not exist. Available operations: '+', '-', '*'";
   }
 };
 
