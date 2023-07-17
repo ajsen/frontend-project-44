@@ -12,7 +12,7 @@ const getProgression = (start, step, progressionLength) => {
 
 const introduction = 'What number is missing in the progression?';
 
-const progressionGame = () => {
+const runProgressionGame = () => {
   const start = random(1, 100);
   const step = random(1, 5);
   const progressionLength = random(5, 10);
@@ -25,5 +25,5 @@ const progressionGame = () => {
 
 export {
   introduction,
-  progressionGame,
+  runProgressionGame,
 };

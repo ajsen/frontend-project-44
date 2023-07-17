@@ -15,7 +15,7 @@ const isPrime = (num) => {
 
 const introduction = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const primeGame = () => {
+const runPrimeGame = () => {
   const question = random(2, 99);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
@@ -24,5 +24,5 @@ const primeGame = () => {
 
 export {
   introduction,
-  primeGame,
+  runPrimeGame,
 };

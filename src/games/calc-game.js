@@ -16,7 +16,7 @@ const getExpressionResult = (operand1, operand2, operator) => {
 const introduction = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-const calcGame = () => {
+const runCalcGame = () => {
   const operand1 = random(1, 10);
   const operand2 = random(1, 10);
   const operator = operators[random(operators.length - 1)];
@@ -28,5 +28,5 @@ const calcGame = () => {
 
 export {
   introduction,
-  calcGame,
+  runCalcGame,
 };
