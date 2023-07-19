@@ -42,6 +42,7 @@ node.js 13.2.0 or later
 Clone this repository. Install node.js and npm, then in the project root:
 
 ```bash
+npm install
 sudo npm link
 ```
 
