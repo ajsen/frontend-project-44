@@ -39,7 +39,7 @@ node.js 13.2.0 or later
 
 ## Install
 
-Clone this repository. Install node.js and npm, then in the project root:
+Clone this repository. Install [node.js](https://nodejs.org/en), then in the project root:
 
 ```bash
 npm install
