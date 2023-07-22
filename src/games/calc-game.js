@@ -1,19 +1,34 @@
 import runGame from '../index.js';
-import { getRandomNumberFromRange, getResultOfExpression } from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const introduction = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-const runCalcGame = () => {
-  const operand1 = getRandomNumberFromRange(1, 100);
-  const operand2 = getRandomNumberFromRange(1, 10);
-  const operator = operators[getRandomNumberFromRange(0, operators.length - 1)];
+const calculate = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '+':
+      return operand1 + operand2;
+    case '-':
+      return operand1 - operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
+};
+
+const getTask = () => {
+  const operand1 = getRandomNumber(1, 100);
+  const operand2 = getRandomNumber(1, 100);
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `${operand1} ${operator} ${operand2}`;
-  const correctAnswer = getResultOfExpression(operand1, operand2, operator);
+  const correctAnswer = calculate(operand1, operand2, operator);
 
-  return [question, String(correctAnswer)];
+  return [String(question), String(correctAnswer)];
 };
 
-export default () => {
-  runGame(runCalcGame, introduction);
+const runCalc = () => {
+  runGame(getTask, introduction);
 };
+
+export default runCalc;
