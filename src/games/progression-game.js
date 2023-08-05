@@ -3,10 +3,10 @@ import getRandomNumber from '../utils.js';
 
 const introduction = 'What number is missing in the progression?';
 
-const getProgression = (start, step, progressionLength) => {
+const getProgression = (start, step, length) => {
   const progression = [];
 
-  for (let i = start; progression.length <= progressionLength - 1; i += step) {
+  for (let i = start; progression.length < length; i += step) {
     progression.push(i);
   }
 
@@ -21,7 +21,7 @@ const getTask = () => {
   const missingNumberIndex = getRandomNumber(0, question.length - 1);
   const correctAnswer = question.splice(missingNumberIndex, 1, '..');
 
-  return [String(question.join(' ')), String(correctAnswer)];
+  return [question.join(' '), String(correctAnswer)];
 };
 
 const runProgression = () => {
