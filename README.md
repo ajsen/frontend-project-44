@@ -5,7 +5,7 @@
 
 brain-games is a set of math games consisting of:
 
-* brain-even Identify odd and even numbers
+* brain-even. Identify odd and even numbers
 * brain-calc. Calculate an expression.
 * brain-gcd. Find the greatest common divisor of numbers.
 * brain-progression. Determine which number is missing in an arithmetic progression.
@@ -13,7 +13,7 @@ brain-games is a set of math games consisting of:
 
 ## Requirements
 
-node.js 13.2.0 or later
+node.js 13.2.0 or above
 
 ## Install
 
